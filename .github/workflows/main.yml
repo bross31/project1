@@ -14,9 +14,9 @@ jobs:
 
   steps:
    uses: actions/checkout@master
-    - name: Deploy to Azure Web App
-      uses: azure/webapps-deploy@v1
-      with:
+    name: Deploy to Azure Web App
+    uses: azure/webapps-deploy@v1
+    with:
         app-name: 'CMST385-Bross31'
         slot-name: 'production'
         publish-profile: ${{ secrets.AppServiceCMST385 }}
