@@ -1,16 +1,16 @@
-name: Dename: Deploy HTML Files to AppService - cmst385
+name: Deploy HTML Files to AppService - cmst385
 on:
-  push:
-    branches:
-      - master
+ push:
+  branches:
+   - master
 jobs:
-  build-and-deploy:
-    runs-on: windows-latest
-    steps:
-    -uses: actions/checkout@master
-    -name: Deploy to Azure Web App
-     uses: azure/webapps-deploy@v1
-     with:
-      app-name: 'cmst385-bross31'
-      slot-name: 'production' 
-      publish-file: ${{secrets.AppServiceCMST385}}      
+ build-and-deploy:
+  runs-on: windows-latest
+  steps:
+  - uses: actions/checkout@master
+  - name: Deploy to Azure Web App
+    uses: azure/webapps-deploy@v1
+    with:
+     app-name: 'cmst385-bross31'
+     slot-name: 'production' 
+     publish-file: ${{secrets.AppServiceCMST385}}  
