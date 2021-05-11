@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--Author: Bradley Ross  -->
+<!--Date: 10/8/2019-->
+<!--Assignment: Final Project-->
+<!--File Name: Defense.html-->
+
+<html lang = "en">
+
+<head>
+	<title>Unleashed Defense</title>
+	<link rel="shortcut icon" type="image/x-icon" href="FP_Images/favicon.ico"/>
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="Fp_layout.css" rel="stylesheet"/>
+	<!--linking the javascript and css for the Calender-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link rel="stylesheet" href="caleandar-master/css/theme2.css"/>
+</head>
+
+<body>
+	<div class="content flex-center">
+		<div class="content-message">
+		<!--Banner for the website-->
+		<header>
+				<a href="Home.html"><img src ="FP_Images/banner/FPBanner.jpg" alt=""/></a>
+
+				<!--Navigation for the website, linking all pages-->
+			<nav>
+				<ul>
+				   <li><a href="Home.html">Home</a></li>
+				   <li><a href="Defense.html">Defense Instruction and Philosophy</a></li>
+				   <li><a href="Pitching.html">Pitching Instruction and Philosophy</a></li>
+				   <li><a href="Hitting.html">Hitting Instruction and Philosophy</a></li>
+				   <li><a href="Contact.html">Contact Us</a></li>
+				 </ul>
+			</nav>
+		</header>
+		</div>
+		<br>
+
+	</div>
+
+		<!--JavaScript Interactive calender-->
+	<div id="caleandar" align="center">
+  	<script src="caleandar-master/js/caleandar.js"></script>
+  	<script src="caleandar-master/js/demo.js"></script>
+	</div>
+
+	<div id="text_contact">
+		<p>Unleashed Hitting, Thanks You for visiting our website. Please fill out our contact form below to reach us. Use the form to request more information about memberships, instructors, camp/clinics, and schedule individual lessons.</p>
+	</div>
+
+	<!--Form for the user to contact the company-->
+	<main id="form">
+		<h1>Contact Us</h1>
+		<form action="mailto:bradross09@yahoo.com" method="post" enctype="text/plain">
+			<label for="email_address1">Email Address: </label>
+			<input type="text" id="email_address1" name="email_address1" required>
+			<span id="email_address1_error">*</span><br>
+
+			<label for="email_address2"> Confirm Email Address: </label>
+			<input type="text" id="email_address2" name="email_address2" required>
+			<span id="email_address2_error">*</span><br>
+
+			<label for="First_Name">First Name: </label>
+			<input type="text" id="First_Name" name="First_Name" required>
+			<span id="First_Name_error">*</span><br>
+
+			<label for="Last_Name">Last Name: </label>
+			<input type="text" id="Last_Name" name="Last_Name" required>
+			<span id="Last_Name_error">*</span><br>
+
+			<label for="phone"> Telephone Number: </label>
+			<input type="text" id="phone" name="phone" required>
+			<span id="phone_error">*</span><br>
+
+			Gender:
+			<input type="radio" name="gender" value="male" required>Male
+			<input type="radio" name="gender" value="female" required>Female
+			<span id="gender_error">*</span><br>
+
+			Please leave a comment below describing how we can help you. If you are requesting a lesson please include the date, time, duration, and instructor. Thank you!<br>
+			<textarea> </textarea>
+
+			<!--alert for the user to known information was submitted-->
+			<button onclick="alertbox()">Contact Us</button>
+
+		</form>
+	</main>
+
+		<!--JavaScript for the alert box-->
+	<script>
+	function alertbox() {
+		alert("Thank You for contacting Unleashed Hitting. We will do our best to respond with 48 hours. In case of emergencey call us.")
+		}
+	</script>
+
+		<!--Footer Navigation-->
+		<footer>
+			<a href="Home.html">Home</a>
+			<a href="Defense.html">Defense</a>
+			<a href="Pitching.html">Pitching</a>
+			<a href="Hitting.html">Hitting</a>
+			<a href="Contact.html">Contact Us</a><br>
+			Owner and Operator Brad Ross, 2021
+		</footer>
+</body>
+
+</html>

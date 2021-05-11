@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--Author: Bradley Ross  -->
+<!--Date: 10/8/2019-->
+<!--File Name: home.html-->
+
+<html lang = "en">
+
+	<head>
+		<title>Unleashed Hitting</title>
+		<link rel="shortcut icon" type="image/x-icon" href="FP_Images/favicon.ico"/>
+		<meta charset = "utf-8">
+		<link href="Fp_layout.css" rel="stylesheet"/>
+		<script src="caleandar-master/myJavaScript.js"></script>
+	</head>
+
+
+	<body>
+	<!--Banner for page-->
+		<header>
+			<a href="Home.html"><img src ="FP_Images/banner/FPBanner.jpg" alt=""/></a>
+			<nav>
+			<!--Navigation for the website, linking all pages.-->
+				<ul>
+				   <li><a href="Home.html">Home</a></li>
+				   <li><a href="Defense.html">Defense Instruction and Philosophy</a></li>
+				   <li><a href="Pitching.html">Pitching Instruction and Philosophy</a></li>
+				   <li><a href="Hitting.html">Hitting Instruction and Philosophy</a></li>
+				   <li><a href="Contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<h1 class="content-title">What is Unleashed Hitting?</h1>
+
+		<!--1 of the 5 required photos for the website.-->
+		<div id="equipment">
+			<img src="FP_Images/photos/equipment.jpg" alt="" width="450" height="400" usemap="#skills">
+			<div id="copy">
+				Bradley Ross &#169;
+			</div>
+		</div>
+
+	<!--Image Map-->
+    <map name="skills">
+      <area shape="circle" coords="380,280,55" alt="Defense" href="Defense.html">
+      <area shape="circle" coords="200,360,120" alt="Pitching" href="pitching.html">
+      <area shape="rect" coords="20,100,360,220" alt="Hitting" href="Hitting.html">
+    </map>
+
+
+		<div id="home_content">
+		 <!--Content for home page-->
+			<table>
+				<tr>
+					<th>Unleashed Hitting is an all inclusive 24/7 softball and baseball training facility.
+						This facility is equipped with 8 batting cages, open turf field for defensive work,
+						and 6 lane pithing tunnels. All cages are equipped with:</th>
+				</tr>
+				<tr>
+					<td>
+						<ul class="a">
+							<li>Pitching Machine(4 Baseball, 4 Softball)</li>
+							<li>Baseballs, 11-inch Softballs, 12-inch Softballs</li>
+							<li>Pitching Machine Balls</li>
+							<li>Protective Screen</li>
+							<li>2 Tees</li>
+							<li>Turf Batters Box/Plate Areas</li>
+							<li>A Chair</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<th>The open turf field for defensive work is equipped with:</th>
+				</tr>
+				<tr>
+					<td>
+						<ul class="b">
+							<li>100 Baseballs</li>
+							<li>60 12-inch Softballs</li>
+							<li>40 11-inch Softballs</li>
+							<li>50 Tennis Balls</li>
+							<li>12 Paddles</li>
+							<li>2 Fungo Bats</li>
+							<li>Mr. Fungoman*</li>
+							<li>Several Protective Screens/Sock Nets</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<!--Links to seperate pages-->
+		<article id="link">
+			<h2>Additional Links:</h2>
+			<p>Unleashed hitting proudly supports USA Softball. Learn More Here:</p>
+			<a href="https://www.teamusa.org/USA-Softball">
+				<img id="usa" src="FP_Images/photos/usalogo.jpg" alt="USA Softball"
+				width="100" height="100">
+			</a>
+		</article>
+
+		<!--Footer Navigation-->
+		<footer>
+			<a href="Home.html">Home</a>
+			<a href="Defense.html">Defense</a>
+			<a href="Pitching.html">Pitching</a>
+			<a href="Hitting.html">Hitting</a>
+			<a href="Contact.html">Contact Us</a><br>
+			Owner and Operator Brad Ross, 2021
+			<!--JavaScript for time button-->
+			<p id="time"></p>
+			<button onclick="displayDate()">Time?</button>
+		</footer>
+	</body>
+
+</html>
